@@ -1,6 +1,9 @@
 import "./App.css";
 import Body3 from "./Component/Body3";
 import Head1 from "./Component/Header/Head1";
+import Head2 from "./Component/Header/Head2";
+import Head3 from "./Component/Header/Head3";
+import Head4 from "./Component/Header/Head4";
 import Body2 from "./Component/Home/Body2";
 import Body4 from "./Component/Home/Body4";
 import Body5 from "./Component/Home/Body5";
@@ -34,7 +37,7 @@ function App() {
       <Body7/>
       <Body8/>
       <New/>
-      {/* <Head1/> */}
+      {/* <Head4/> */}
     </div>
   );
 }

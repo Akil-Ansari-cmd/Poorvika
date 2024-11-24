@@ -6,6 +6,9 @@ import { MdAccountCircle } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Head1 from '../Header/Head1';
+import Head2 from '../Header/Head2';
+import Head3 from '../Header/Head3';
+import Head4 from '../Header/Head4';
 const Home = () => {
     const [open, setOpen] = useState();
 
@@ -35,30 +38,15 @@ const Home = () => {
                         <div>
                             <Head1 />
                         </div>
-                        <div className='lg:flex hidden flex-col text-white'>
-                            <div className='text-sm font-normal'>Locate</div>
-                            <div className='flex'>
-                                <div className='text-sm font-semibold'>Stores</div>
-                                <IoIosArrowDown className='w-5 h-6' />
-                            </div>
+                        <div>
+                            <Head3/>
                         </div>
-                        <div className='flex flex-col text-white'>
-                            <div className='lg:flex hidden text-sm font-normal'>0 Items</div>
-                            <div className='flex'>
-                                <div className='lg:flex hidden text-sm font-semibold whitespace-nowrap'>₹ 0</div>
-                                <FiShoppingCart className='lg:w-5 lg:h-6 w-7 h-7 md:ml-8 ml-4  lg:-mt-2 -mt-0 relative' />
-                                <div className='lg:hidden md:flex hidden md:absolute ml-8 pl-1.5 font-semibold pt-0 bg-green-600 border rounded-full w-5 h-5  top-0 text-xs'>0</div>
-                                <div className='md:hidden flex absolute ml-2  pl-1.5 font-semibold pt-0.5 bg-green-600 border rounded-full w-5 h-5  top-0.5 text-xs'>0</div>
-                            </div>
+                       <div>
+                        <Head4/>
+                       </div>
+                        <div>
+                            <Head2/>
                         </div>
-                        <div className='flex flex-col text-white'>
-                            <div className='lg:flex hidden text-sm font-normal'>My Account</div>
-                            <div className='flex'>
-                                <div className='lg:flex hidden text-sm font-semibold whitespace-nowrap'>Sign In</div>
-                                <MdAccountCircle className='w-10 h-8 md:ml-8 ml-2 lg:-mt-4 -mt-0' />
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
