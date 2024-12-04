@@ -1,45 +1,52 @@
 import "./App.css";
-import Body3 from "./Component/Body3";
-import Head1 from "./Component/Header/Head1";
-import Head2 from "./Component/Header/Head2";
-import Head3 from "./Component/Header/Head3";
-import Head4 from "./Component/Header/Head4";
-import Body2 from "./Component/Home/Body2";
-import Body4 from "./Component/Home/Body4";
-import Body5 from "./Component/Home/Body5";
-import Body6 from "./Component/Home/Body6";
-import Body7 from "./Component/Home/Body7";
-import Body8 from "./Component/Home/Body8";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Poorvika from "./Component";
+import Head5 from "./Component/Header/Head5";
+import Head6 from "./Component/Header/Head6";
+import Detail from "./Component/Header/Detail";
+import Bottom from "./Component/Bottom/Bottom";
 import Home from "./Component/Home/Home";
 import Home1 from "./Component/Home/Home1";
-import Home2 from "./Component/Home/Home2";
 import New from "./Component/Home/New";
-import Try from "./Component/Home/Try";
-
 
 function App() {
+  const product = [{
+    id:"1",
+    name:"iphone",
+  },{
+    id:"2",
+    name:"iphone",
+  },{
+    id:"3",
+    name:"iphone",
+  },{
+    id:"4",
+    name:"iphone",
+  },{
+    id:"5",
+    name:"iphone",
+  }]
   return (
+  
     // <main class="flex justify-center gap-4 flex-col min-h-screen">
     //   <h1 class="text-3xl text-center font-bold underline">React & Tailwind CSS Starter Pack</h1>
     //   <p class="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
     //   <img src="https://bit.ly/3wsmzTy" alt="meme" class="mx-auto" />
     // </main>
-    <div className="bg-gray-100">
-      <Home/>
-      <Home1/>
-      <Home2/>
-      <Try/>
-      <Body2/>
-      <Body3/>
-      <Body4/>
-      <Body5/>
-      <Body6/>
-      <Body7/>
-      <Body8/>
-      <New/>
-      {/* <Head4/> */}
-    </div>
-  );
+  <>
+  <BrowserRouter>
+  <Home/>
+  <Home1/>
+  <Routes>
+    <Route path='/' element={<Poorvika/>}/>
+    <Route path="/Wish" element={<Head5/>}/>
+    <Route path="/Product" element={<Head6/>}/>
+    <Route path="/Bottom" element={<Bottom/>}/>
+  </Routes>
+  <New/>
+  </BrowserRouter>
+  </>
+  )
 }
 
 export default App;

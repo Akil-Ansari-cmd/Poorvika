@@ -4,10 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 function PrevArrow(props) {
   const { onClick } = props;
   return (
-    <button className="bg-white absolute top-[35%] border  rounded-r-lg pt-1 h-20 w-8 pl-1.5 "  onClick={onClick}  >
+    <button className="bg-white absolute top-[35%] border z-40 rounded-r-lg pt-1 h-20 w-8 pl-1.5 "  onClick={onClick}  >
     <IoIosArrowBack className="h-5 w-5"/>
     </button>
   );
@@ -24,7 +25,7 @@ function NextArrow(props) {
 }
 // import { useNavigate } from 'react-router-dom'
 function Home2() {
-  // const navigate = useNavigate();
+  const Navigate = useNavigate();
   var settings = {
     dots: false,
     infinite: false,
@@ -78,7 +79,7 @@ function Home2() {
     <div>
     <div className="slider-container bg-white mt-3 z-40">
       <Slider {...settings}>
-        <div
+        <div onClick={() => Navigate("/Bottom")}
           className='flex mt-3 pt-8 ml-8 justify-center items-center w-[10%] cursor-pointer h-72'>
           <div className='flex flex-col gap-2'>
             <div><img className='h-40' src='https://img-prd-pim.poorvika.com/pageimg/group-125-65dae67371963.webp?width=150&height=150&quality=75' /></div>

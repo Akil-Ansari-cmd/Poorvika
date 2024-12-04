@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
 const New = () => {
   return (
-    <div>
+    <div className=''>
       <div className='flex items-center h-14 '>
         <div className='flex items-center gap-3 md:pl-3 pl-5 border-r  border-slate-400 h-full w-44 shadow-sm'>
           <div><FaWhatsapp className='h-8 w-6 text-green-500' /></div>
