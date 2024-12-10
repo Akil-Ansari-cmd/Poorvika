@@ -18,6 +18,7 @@ import Bottom4 from './Bottom/Bottom4'
 import Bottom5 from './Bottom/Bottom5'
 import Bottom6 from './Bottom/Bottom6'
 import Bottom9 from './Bottom/Bottom9'
+import Product from './Detail/Product'
 
 const Poorvika = () => {
   return (
@@ -33,7 +34,7 @@ const Poorvika = () => {
       <Body6/>
       <Body7/>
       <Body8/>
-      
+      {/* <Product/> */}
      
     </div>
   )

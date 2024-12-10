@@ -8,6 +8,7 @@ import Bottom from "./Component/Bottom/Bottom";
 import Home from "./Component/Home/Home";
 import Home1 from "./Component/Home/Home1";
 import New from "./Component/Home/New";
+import Product from "./Component/Detail/Product";
 
 function App() {
   const product = [{
@@ -42,6 +43,7 @@ function App() {
     <Route path="/Wish" element={<Head5/>}/>
     <Route path="/Product" element={<Head6/>}/>
     <Route path="/Bottom" element={<Bottom/>}/>
+    <Route path="/productdetail" element={<Product/>}/>
   </Routes>
   <New/>
   </BrowserRouter>

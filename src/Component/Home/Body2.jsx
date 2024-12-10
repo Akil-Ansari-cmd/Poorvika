@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 function PrevArrow(props) {
   const { onClick } = props;
   return (
@@ -23,6 +24,7 @@ function NextArrow(props) {
   );
 }
 const Body2 = () => {
+  const Navigate = useNavigate();
   const product = [{
     id: 1,
     src: "https://img-prd-pim.poorvika.com/cdn-cgi/image/width=131,height=131,quality=75/product/Apple-iphone-16-teal-128gb-Front-Back-View.png",
@@ -149,7 +151,7 @@ const Body2 = () => {
         <Slider {...settings}>
           {
             product.map((items) =>
-              <div key={items.id} className=' border-r my-2'>
+              <div key={items.id} onClick={() => Navigate("/productdetail",{state:items})} className=' border-r my-2'>
                 <div className='ml-10 mt-5'>
                   <img className='h-36' src={items.src} />
                 </div>

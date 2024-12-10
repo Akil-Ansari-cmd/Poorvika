@@ -12,7 +12,7 @@ const Home1 = () => {
     const handleNo = () => setYes(false);
     return (
         <>
-            <div className='xl:flex hidden items-center text-base font-semibold gap-5 px-24 h-10 sticky top-11 rounded-b-md z-40 bg-white'>
+            <div className='lg:flex hidden items-center text-base font-semibold gap-5 px-24 xl:h-10 h-14 sticky top-11 rounded-b-md shadow-lg z-40 bg-white border border-b-slate-200 '>
                 <div className={`hover:cursor-pointer relative  text-black hover:text-orange-500  ${open ? "text-orange-500" : " "}`} onMouseEnter={handleOpen} onMouseLeave={handleClose}>Mobile & Accessories
                 </div>
                 <div className={`hover:cursor-pointer text-black hover:text-orange-500  ${yes ? "text-orange-500" : " "}`} onMouseEnter={handleYes} onMouseLeave={handleNo}>Computer & Tablets
