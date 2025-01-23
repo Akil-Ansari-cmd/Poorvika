@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Bottom1 from './Bottom1'
 import Bottom4 from './Bottom4'
 import Bottom5 from './Bottom5'
@@ -6,6 +6,9 @@ import Bottom6 from './Bottom6'
 import Bottom9 from './Bottom9'
 
 const Bottom = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+}, [])
   return (
     <div className='bg-gray-100'>
         <Bottom1/>

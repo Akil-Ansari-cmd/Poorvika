@@ -12,6 +12,7 @@ import EMI from './EMI';
 import { FaCircleCheck } from "react-icons/fa6";
 import Product2 from './Product2';
 import { useLocation } from 'react-router-dom';
+import './App.css'
 const image = [{ id: "1", src: "https://img-prd-pim.poorvika.com/product/Apple-iphone-16-teal-128gb-Front-Back-View.png" },
 { id: "2", src: "https://img-prd-pim.poorvika.com/product/Apple-iphone-16-teal-128gb-Back-Left-View.png" },
 { id: "3", src: "https://img-prd-pim.poorvika.com/product/Apple-iphone-16-teal-128gb-Bottom-View.png" },

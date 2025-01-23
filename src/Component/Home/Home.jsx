@@ -9,9 +9,11 @@ import Head1 from '../Header/Head1';
 import Head2 from '../Header/Head2';
 import Head3 from '../Header/Head3';
 import Head4 from '../Header/Head4';
+import Drawer from './Drawer';
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
     const [open, setOpen] = useState();
-
+    const Navigate = useNavigate();
     const handleOpen = () => {
         setOpen(!open);
     }
@@ -25,9 +27,9 @@ const Home = () => {
             <div className='sticky top-0 z-50'>
                 <div className='flex items-center  bg-orange-500 h-11'>
                     <div className='md:hidden flex ml-2' >
-                        <RxHamburgerMenu className='text-white h-6 w-6' />
+                        <Drawer />
                     </div>
-                    <div className='xl:ml-20 lg:ml-2 ml-auto'>
+                    <div onClick={() => Navigate("/")} className='xl:ml-20 lg:ml-2 ml-auto cursor-pointer'>
                         <img className='h-14 w-44 ' src="https://img.poorvika.com/common/Poorvika-english-logo.svg" />
                     </div>
                     <div className='flex items-center lg:space-x-12 md:space-x-5  md:ml-0 ml-14'>

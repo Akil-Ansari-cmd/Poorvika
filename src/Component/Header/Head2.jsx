@@ -49,7 +49,7 @@ const Head2 = () => {
                                 <div className='text-red-500'>Register</div>
                                 <div className='text-black'>Forgot Password ?</div>
                             </div>
-                            <div className='mx-10 p-3 mt-5 text-center bg-orange-400 rounded-md font-bold text-white'>LOGIN</div>
+                            <div className='mx-10 md:mb-0 mb-3 p-3 mt-5 text-center bg-orange-400 rounded-md font-bold text-white'>LOGIN</div>
                             <div className='md:flex hidden mx-auto font-bold text-orange-500'>or</div>
                             <div className='md:flex hidden mx-auto my-2 text-black'>LOGIN WITH OTP / GUEST</div>
                             <div className='md:flex hidden text-xs mx-auto text-black'>Upon login, I agree to Poorvika's <span className='text-blue-500'>Privacy Policy</span> & <span className='text-blue-500'>Terms</span></div>
